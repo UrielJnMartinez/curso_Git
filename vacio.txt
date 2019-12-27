@@ -67,6 +67,11 @@ git config --global (configurar Git para nuesto equipo)
     git reset 731897e78bc7331be5c4381242b98878029a6762 --soft (regresa al estado anterior en el Directorio de trabajo, 
     pero los archivos en Staging siguen estando alli si se hizo un git add para un futuro commit )
 
+    git checkout f0de05cfa4d7e0aed446e2ce87ed30b948f83635 nombre_archivo.txt (regresa el archivo
+        en el momento del commit, y en el directorio muestra el estado de ese archivo sinn las 
+        modificaciones posteriores al commit, y si se hace un commit, se pueden perder todos los cambios posteriores )
+
+    git checkout master nombre_archivo.txt (trae la version el arvhivo con el ultimo commit que esta en el Repositorio)
     
 
 
