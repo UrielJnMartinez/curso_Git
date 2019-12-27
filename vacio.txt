@@ -1,9 +1,74 @@
-escribimos algo
-jajaja
+-- CURSO DE GIT Y GITHUB--
+----------------------------
+git config --global (configurar Git para nuesto equipo)
+=> Iniciar un un proyecto con GIT:
+
+    git init
+
+    - se crean los archivos que van a llevar el control de los cambios en un directorio
+      .git que siempre etsta oculto.
+
+=> Agregar los primeros archivos o archivos modificados:
+
+    git add . (agrega todos los cambios en los archivos que se encuentran en ese directorio)
+    git add nombre_archivo.txt (agrega un archivo o archivos en especifico)
+
+    - en esta parte los archivos se encuentran en un área en la memoria RAM, que conocemos como Staging.
+
+=> Hacer el primer commit:
+
+    git commit -m "mensaje del comit, por buena practica este no debe ir vacio,  ademas de que Git no lo permite"
+
+    -  Agrega todos los cambios realizados en los archivos y los guarda con un identificador unico
+        f0de05cfa4d7e0aed446e2ce87ed30b948f83635
+
+<< Directorio ==>> Staging ==>> Repositorio >>
+    ---------------------------------------------
+    - Directorio: local
+    - Staging: lugar en memoria donde se estan guardando los cambios
+    - Repositorio: Donde se encuentran todos los cambios realizados
+    ----------------------------------------------
+
+<<< Ciclo de vida o estados de los archivos en Git:>>>
+
+    -  Cuando trabajamos con Git, nuestros archivos pueden vivir y moverse entre 4 diferentes estados:
+
+    >> Archivos Tracked: 
+    Son los archivos que viven dentro de Git, no tienen cambios pendientes y sus últimas actualizaciones 
+    han sido guardadas en el repositorio gracias a los comandos git add y git commit.
+
+    >> Archivos Staged: 
+    Son archivos en Staging. Viven dentro de Git y hay registro de ellos porque han sido 
+    afectados por el comando git add, aunque no sus últimos cambios. Git ya sabe de la existencia 
+    de estos últimos cambios pero todavía no han sido guardados definitivamente en el repositorio 
+    porque falta ejecutar el comando git commit.
+
+    >> Archivos Unstaged: 
+    Entiendelos como archivos “Tracked pero Unstaged”. Son archivos que viven dentro de Git pero no han sido 
+    afectados por el comando git add ni mucho menos por git commit. Git tiene un registro de estos archivos 
+    pero está desactualizado, sus últimas versiones solo están guardadas en el disco duro.
+
+    >> Archivos Untracked: 
+    Son archivos que NO viven dentro de Git, solo en el disco duro. Nunca han sido afectados por git add, 
+    así que Git no tiene registros de su existencia.
+
+=> Otros Comandos de git:
+
+    git status (Nos permite ver el estado de todos nuestros archivos y carpetas)
+
+    git log nombre_archivo.txt (nos permite ver el historial de commits que se han hecho en este archivo)
+
+    git diff f0de05cfa4d7e0aed446e2ce87ed30b948f83635 731897e78bc7331be5c4381242b98878029a6762 (permite comparar
+        estos dos commits, saber exactamente que fuelo que se modifico, se slimino o se agrego)
+    
+    git reset 731897e78bc7331be5c4381242b98878029a6762 --hard (regresa a ese commit en especifico, y borra todo los 
+        commits que se hayan hecho despues de este)
+    
+    git reset 731897e78bc7331be5c4381242b98878029a6762 --soft (regresa al estado anterior en el Directorio de trabajo, 
+    pero los archivos en Staging siguen estando alli si se hizo un git add para un futuro commit )
+
+    
 
 
-no se dsjdflkjsldkkfjojasdf
-asdfkjnaskdjf
 
-asdfkjnaskdjfasdfas
-asd
+
