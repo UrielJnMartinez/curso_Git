@@ -72,7 +72,39 @@ git config --global (configurar Git para nuesto equipo)
         modificaciones posteriores al commit, y si se hace un commit, se pueden perder todos los cambios posteriores )
 
     git checkout master nombre_archivo.txt (trae la version el arvhivo con el ultimo commit que esta en el Repositorio)
+
+    git rm --cached (Elimina los archivos del área de Staging y del próximo commit pero los mantiene 
+        en nuestro disco duro.
     
+    git rm --force (Elimina los archivos de Git y del disco duro. Git siempre guarda todo, 
+        por lo que podemos acceder al registro de la existencia de los archivos, de modo 
+        que podremos recuperarlos si es necesario (pero debemos usar comandos más avanzados).
+
+<<<<Repositorios Remotos>>>>
+
+    git clone url?dlfgmdfogij00 (clona el repositorio en el servidor remoto y trae una copia 
+        los archivos que se encuentran en ese repositorio)
+
+    git  fetch (Lo usamos para traer actualizaciones del servidor remoto y guardarlas en nuestro repositorio local)
+
+    git push  (envia todos los cambios al servidor remoto despues de hacer uno o vrios commits)
+
+    git merge (mezcla los cambios del servidor y nuestro local. Tambien puede mezclar ramas)
+
+    git pull  (Básicamente, git fetch y git merge al mismo tiempo)
+
+    ----------------------------
+    HEAD (commit mas reciennte/ Cabecera)
+    ----------------------------
+    -> Ramas o Branches <-
+
+
+
+
+
+
+
+
 
 
 
