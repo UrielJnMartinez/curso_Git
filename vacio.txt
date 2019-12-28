@@ -98,6 +98,10 @@ git config --global (configurar Git para nuesto equipo)
     ----------------------------
     -> Ramas o Branches <-
 
+    git branch nombre_Rama (crea una rama a partir del ultimo commit)
+
+    git checkout nombre_Rama (cambia a la nueva rama )
+
 
 
 
