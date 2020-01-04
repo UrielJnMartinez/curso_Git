@@ -59,7 +59,7 @@ git config --global (configurar Git para nuesto equipo)
     git log nombre_archivo.txt (nos permite ver el historial de commits que se han hecho en este archivo)
 
     git diff f0de05cfa4d7e0aed446e2ce87ed30b948f83635 731897e78bc7331be5c4381242b98878029a6762 (permite comparar
-        estos dos commits, saber exactamente que fuelo que se modifico, se slimino o se agrego)
+        estos dos commits, saber exactamente que fue  lo que se modifico, se slimino o se agrego)
     
     git reset 731897e78bc7331be5c4381242b98878029a6762 --hard (regresa a ese commit en especifico, y borra todo los 
         commits que se hayan hecho despues de este)
@@ -80,6 +80,15 @@ git config --global (configurar Git para nuesto equipo)
         por lo que podemos acceder al registro de la existencia de los archivos, de modo 
         que podremos recuperarlos si es necesario (pero debemos usar comandos más avanzados).
 
+    ------------------------
+    =>otras formas de salir de vim  <=
+
+        esq
+        :q (salir sin guardar cambios al archivo)
+        :wq (salir y guardar los cambios)
+        :w (guardar cambios sin salir)
+        :q! (sale del editor descartando los cambios)        
+    ------------------------
 <<<<Repositorios Remotos>>>>
 
     git clone url?dlfgmdfogij00 (clona el repositorio en el servidor remoto y trae una copia 
@@ -91,7 +100,7 @@ git config --global (configurar Git para nuesto equipo)
 
     git merge (mezcla los cambios del servidor y nuestro local. Tambien puede mezclar ramas)
 
-    git pull  (Básicamente, git fetch y git merge al mismo tiempo)
+    git pull  (hace lo mismo  que git fetch y git merge al mismo tiempo)
 
     ----------------------------
     HEAD (commit mas reciennte/ Cabecera)
@@ -100,7 +109,13 @@ git config --global (configurar Git para nuesto equipo)
 
     git branch nombre_Rama (crea una rama a partir del ultimo commit)
 
-    git checkout nombre_Rama (cambia a la nueva rama )
+    git checkout nombre_Rama (cambia a la nueva rama o moverse entre ramas )
+
+    git commit -am "cambios en la cabeccera" (Agrega y hace el comit, solo en los archivos que ya 
+        hayan sido afectados por un add . previamente, no funciona con archivos nuevos)
+
+
+
 
 
 
