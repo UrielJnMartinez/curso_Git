@@ -114,7 +114,15 @@ git config --global (configurar Git para nuesto equipo)
     git commit -am "cambios en la cabeccera" (Agrega y hace el comit, solo en los archivos que ya 
         hayan sido afectados por un add . previamente, no funciona con archivos nuevos)
 
-
+    ----------------
+    para hacer un git merge de dos ramas, tengo que cambiar a la rama en donde quiero tener
+    los nuevos cambios de la otra rama, para traer los cambios de la rama cabecera_dev,
+    me tengo que cambiar a master , para que me puueda traer el ultimo commit de master y
+    a su vez me traera el ultmo commit de cabecera_dev con todos los cambios y creando un nuevos
+    commit en master.
+    ----------------
+    
+     
 
 
 
