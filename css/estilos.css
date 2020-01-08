@@ -12,6 +12,20 @@ body{
     margin: auto;
 }
 
+#cabecera{
+    background: aquamarine;
+    box-shadow:  0px 1px 10px  0px rgba(0, 0,0,0.75);
+    color: black;
+    font-weight: bold;
+    margin: 0;
+    padding: 0.5em  ;
+}
+#cabecera #lema{
+    padding: 0 0 0 1em;
+    font-weight: normal;
+    font-size: small;
+}
+
 #container h1{
     font-size: 20px;
 }
