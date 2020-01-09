@@ -121,8 +121,61 @@ git config --global (configurar Git para nuesto equipo)
     a su vez me traera el ultmo commit de cabecera_dev con todos los cambios y creando un nuevos
     commit en master.
     ----------------
-    
-     
+    <<< Rpositorios remotos en GitHub>>>
+    para agregar un origen de nuestro repositorio local a uno remoto:
+
+        $ git remote add origin https://github.com/UrielJnMartinez/curso_Git.git
+
+    al hacer un: 
+        git pull origin master
+    se trae todos los cambios que existen en esa rama remota y los trae a la rama el la que
+    te encuentres al ejecutar el comando
+
+    ---------------
+    << llaves Publicas y privadas >>
+
+    - ayudan a cifrar y descifrar archivos para poder compartirlos de una form mas segura, 
+    estas llaves son por persona.
+
+    => generar una llave ssh, se tiene que cambiar la configuracion de git en local:
+
+        ssh-keygen -t rsa -b 4096 -C "uri31jn.martinez@gmail.com"
+
+        ssh-keygen (es el comando que genera la llave) 
+        -t (especifica el algoritmo a usar)
+        rsa (tipo de algoritmo) 
+        -b (la complejidad de la llave)
+        4096 (complejidad de la llave desde un punto matematico)
+        -C "uri31jn.martinez@gmail.com" ("-C"correo electronico al que estara conectda la llave)
+
+        ademas de esto se puede agregar una freepassword extra a la llave
+
+        > esto genera una llave privada y una llave publica 
+
+    => comprobar si el servvicio de ssh este corriendo:
+
+        eval $(ssh-agent -s) 
+
+        y tiene que mostrar algo como: 
+
+        Agent pid 2042
+
+    => agregar la llave privada en nuestro entorno local
+        ssh-add ~/.ssh/id_rsa
+        - puede pedir el freepassword extra que nos pidio al momento de generarla para confirmar
+
+    => se hacen cambios en nuestro perfil de GitHub y agregar nuestra llave publica
+
+    => cambiar de HTTPS  por SSH la forma de hacer los commits
+
+        git remote set-url origin git@github.com:UrielJnMartinez/curso_Git.git
+
+        y nos debe de cambiar a:
+            origin  git@github.com:UrielJnMartinez/curso_Git.git (fetch)
+            origin  git@github.com:UrielJnMartinez/curso_Git.git (push)
+
+        
+
 
 
 
